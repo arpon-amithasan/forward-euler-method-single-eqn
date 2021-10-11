@@ -1,7 +1,6 @@
 import numpy as np
 import math
-import matplotlib
-import matplotlib.pyplot as mpl
+import matplotlib.pyplot as plt
 
 tn = 1000  # end time
 h = 1  # step size
@@ -23,8 +22,8 @@ for j in range(1, tn):  # solving decay equation numerically
     m_2[j] = m_2[j-1] + h * (-dc * m_2[j-1])
 
 # mpl.plot(t, m_1) # plotting analytical solution
-mpl.plot(t, m_2)  # plotting numerical solution
-
-mpl.show()  # showing graph
-
-
+plt.plot(t, m_2)  # plotting numerical solution
+plt.xlabel("seconds")
+plt.ylabel("mass (kg)")
+plt.title("Spontaneous nuclear decay")
+plt.show()  # showing graph
