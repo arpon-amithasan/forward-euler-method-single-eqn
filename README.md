@@ -1,7 +1,7 @@
 # forward-euler-method-single-eqn
 This is a python program to solve and plot a simple differential equation using the forward Euler method. In this example, I solved the nuclear decay equation-
 
-m_t = m_0 e^(-lambda * t)
+m_t = m_0 * e^(- lambda * t)
 
 where-
 * m_0 = initial mass,
